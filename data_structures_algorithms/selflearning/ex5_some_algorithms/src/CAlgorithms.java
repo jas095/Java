@@ -1,3 +1,30 @@
+/*
+ * expected outputs:
+ * the method inOrder returns:true
+ * the method theSame returns:false
+ * Diagonal of the character 'l'
+ * l
+ * .l
+ * ..l
+ * ...l
+ * ....l
+ * 
+ * 5302617
+ * the greater is: 5
+ * the minor is: 5
+ * the minor is: 3
+ * the minor is: 0
+ * the greater is: 6
+ * the greater is: 7
+ * 
+ * The new array order
+ * 5372610
+ * 
+ * exchange between stars and crosses
+ *  *****+++*******++******+
+ *  
+ * */
+
 
 public class CAlgorithms {
 	
