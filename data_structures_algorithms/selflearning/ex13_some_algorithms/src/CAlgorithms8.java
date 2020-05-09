@@ -62,16 +62,51 @@ public class CAlgorithms8 {
 			
 		}
 		input.close();
-		System.out.println("==============\nResults ");
 		pila.outputs();
+		System.out.println("==============\nResults ");
 		for (int i = 0; i < repeat; i++) {
 			
 			Object p = pila.pop();
 			System.out.println(p);
 			
 		}
-		pila.outputs();
+		//pila.outputs();
 
 	}
 
 }
+
+
+/*
+ * Please indicate the number of cars you want to add: 2
+Enter the car data number 1 below
+Brand: Honda
+Model: Accord
+Year: 1999
+
+Enter the car data number 2 below
+Brand: Mitsubishi
+Model: Technica
+Year: 1997
+==============
+Results 
+Mitsubishi
+Technica
+1997
+_____
+Mitsubishi
+Technica
+1997
+_____
+
+Mitsubishi
+Technica
+1997
+
+
+Mitsubishi
+Technica
+1997
+
+Is empty
+*/

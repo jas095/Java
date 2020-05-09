@@ -1,14 +1,5 @@
 
 public class Stack {
-
-	private Node top;
-	private Node last;
-	private String name;
-	
-	public Stack() {
-		// TODO Auto-generated constructor stub
-		this("Lista");
-	}
 	
 	public Stack(String name) {
 		top = last=null;
@@ -32,8 +23,17 @@ public class Stack {
 		public String toString() {
 			return "" + data + "_____";
 		}
-		
+	}
+	
+	
 
+	private Node top;
+	private Node last;
+	private String name;
+	
+	public Stack() {
+		// TODO Auto-generated constructor stub
+		this("Lista");
 	}
 	
 	
@@ -46,11 +46,10 @@ public class Stack {
 		return top.data;
 	}
 	public void push(Object data) {
-		if(isEmpty()) {
-			top = last = new Node(data);
-		}else {
-			top = new Node(data,top);
-		}
+		
+			Node auxtop = new Node(data,top);
+			auxtop.next = top;
+			top = auxtop;
 
 	}
 	public Object pop() throws Exception {
@@ -78,7 +77,8 @@ public class Stack {
 			return;
 		}
 		while(actual != null) {
-			System.out.println(actual);
+			top.toString();
+			System.out.println("\nactual: "+actual);
 			actual = actual.next;
 			
 		}
